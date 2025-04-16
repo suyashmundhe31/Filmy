@@ -8,14 +8,16 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 
-import useFetch from "@/services/useFetch";
+import useFetch from "@/services/usefetch";
 import { fetchMovies } from "@/services/api";
+import { getTrendingMovies } from "@/services/appwrite";
 
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 
 import SearchBar from "@/components/SearchBar";
 import MovieCard from "@/components/MovieCard";
+import TrendingCard from "@/components/TrendingCard";
 
 const Index = () => {
   const router = useRouter();
